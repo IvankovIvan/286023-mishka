@@ -1,0 +1,35 @@
+.main-nav {
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: 90%;
+}
+
+.main-nav__interior {
+  background-color: #63D1BB;
+  background-image: url("/img/icon-interior.svg");
+
+}
+
+.main-nav__toys {
+  background-color: #53BEAD;
+  background-image: url("/img/icon-toy.svg");
+}
+
+.main-nav__link {
+  color: white;
+  font-family: "Opensansbold", sans-serif;
+  font-size: 18px;
+  display: block;
+  text-decoration: none;
+  padding: 30px;
+
+}
