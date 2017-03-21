@@ -1,0 +1,52 @@
+.made-good {
+  border: 1px solid #ededed;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.made-good__title {
+  font-family: "Opensansbold", sans-serif;
+  font-size: 17px;
+  margin: 0;
+}
+
+.made-good__title::before {
+  content: "";
+  background: url("/img/icon-video.svg") no-repeat;
+  width: 32px;
+  height: 22px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.made-good__video {
+  position: relative;
+  margin: 0 -30px;
+}
+
+.made-good__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;;
+}
+
+.made-good__info {
+  font-size: 13px;
+  color: #444444;
+  line-height: 24px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-family: "Opensansbold", sans-serif;
+  font-size: 16px;
+  color: #444444;
+  border: 2px solid #444444;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+}

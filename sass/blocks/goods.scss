@@ -1,0 +1,44 @@
+.goods {
+
+}
+
+.good__img {
+  height: 195px;
+  margin-top: 30px;
+}
+
+.good-item {
+  border: 1px solid #ededed;
+  padding: 30px;
+}
+
+.good-item__title {
+  font-family: "Opensansbold", sans-serif;
+  font-size: 17px;
+  margin: 0;
+}
+
+.good-item__info {
+  font-size: 13px;
+  color: #444444;
+}
+
+.good-item__line {
+  color: red;
+}
+
+.good-order {
+  padding-top: 20px;
+}
+.good-order__price {
+  font-family: "Opensansbold", sans-serif;
+  font-size: 15px;
+  display: inline-block;
+  margin: 0;
+}
+
+.good-order__basket {
+  float: right;
+  top: 50%;
+  opacity: 0.2;
+}
