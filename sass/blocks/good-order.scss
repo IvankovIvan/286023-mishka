@@ -1,0 +1,16 @@
+.good-order {
+  padding-top: 20px;
+}
+.good-order__price {
+  font-family: "Opensans", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+  margin: 0;
+}
+
+.good-order__basket {
+  float: right;
+  top: 50%;
+  opacity: 0.2;
+}

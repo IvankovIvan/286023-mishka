@@ -1,0 +1,27 @@
+.page-header {
+  height: 75px;
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header__items {
+  position: relative;
+  height: 100%;
+  padding: 0 30px;
+}
+
+.page-header__img {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.page-header__nav {
+  position: absolute;
+  top:0;
+  bottom: 0px;
+  right: 30px;
+  margin: auto;
+}

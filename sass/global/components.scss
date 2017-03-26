@@ -1,0 +1,94 @@
+.btn {
+  text-transform: uppercase;
+  font-family: "Opensans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: $color-text;
+  border: 2px solid $color-text;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.label {
+  display: block;
+  font-family: "Opensans", sans-serif;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.input-check {
+  display: none;
+}
+
+.input-label-radio::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+  border: 10px solid white;
+  box-shadow: 0 0 0 2px black;
+  border-radius: 50%;
+}
+
+.input-label-checkbox::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  vertical-align: middle;
+  border: 10px solid white;
+  box-shadow: 0 0 0 2px black;
+}
+
+input[type="radio"]:checked + label:before{
+  background: #63d1bb;
+}
+
+input[type="checkbox"]:checked + label:before{
+  background-image: url("/img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: 20px;
+}
+
+.input-text {
+  border: none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  font-size: 17px;
+  vertical-align: middle;
+  height: 40px;
+}
+
+.input-text--tel {
+  background: url("/img/icon-phone.svg") no-repeat right 50%;
+}
+
+.input-text--email {
+  background: url("/img/icon-mail.svg") no-repeat right 50%;
+
+}
+
+.textarea {
+  border: 2px solid black;
+  width: 100%;
+  height: 142px;
+}
+
+.input-submit {
+  text-transform: uppercase;
+  font-family: "Opensans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: $color-text;
+  border: 2px solid $color-text;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+}
