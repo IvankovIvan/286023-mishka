@@ -1,0 +1,44 @@
+.page-header-menu__wrapper {
+  display: none;
+  height: 100%;
+}
+
+.page-header-menu__items {
+  @include clear-ul-items();
+}
+
+.page-header-menu__item {
+  display: inline;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-widths) {
+  .page-header-menu__wrapper {
+    display: block;
+    text-align: right;
+    right: 0;
+  }
+
+  .header-menu__item--search::before {
+    width: 18px;
+    height: 19px;
+    content: "";
+    padding-left:30px;
+    background: url("/img/icon-search.svg") no-repeat;
+    opacity: 0.2;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .header-menu__item--basket::before {
+    padding-left:30px;
+    width: 18px;
+    height: 19px;
+    opacity: 0.2;
+    content: "";
+    background: url("/img/icon-cart.svg") no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

@@ -1,10 +1,15 @@
 @import "global/fonts";
 @import "utils/variables";
+@import "utils/mixins";
+@import "global/scaffolding";
 @import "global/components";
 
 @import "blocks/page-header-logo";
 @import "blocks/page-header";
-@import "blocks/main-logan";
+@import "blocks/page-header-menu";
+@import "blocks/page-header-nav";
+
+@import "blocks/page-main-logan";
 @import "blocks/main-nav";
 @import "blocks/good-week";
 @import "blocks/about";

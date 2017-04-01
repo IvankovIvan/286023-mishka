@@ -2,20 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__items ">
-        <img class="page-header__img" src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">
-        <img class="page-header__nav" src="img/icon-menu-open.svg" alt="Открыть меню" width="20" height="14">
+      <div class="page-header__logo ">
+        <img src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
+        <button class="page-header-nav__toggle" type="button" name="button">Открыть меню</button>
       </div>
+      <nav class="page-header-nav page-header-nav--closed" >
+        <div class="page-header-nav__wrapper">
+          <ul class="page-header-nav__items">
+            <li class="page-header-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="page-header-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="page-header-nav__item "><a class="page-header-nav__search" href="#">Поиcк по сайту</a></li>
+            <li class="page-header-nav__item "><a class="page-header-nav__basket" href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+        <!-- <img class="page-header__nav" src="img/icon-menu-open.svg" alt="Открыть меню" width="20" height="14"> -->
+        <!-- <span>Бесплатная доставка по России</span> -->
     </header>
+
+
+
     <main class="page-main">
-      <div class="main-logan">
-        <h1 class="main-logan__title">Милые штуки ручной работы для дома</h1>
+      <div class="page-main-logan">
+        <h1 class="page-main-logan__title">Милые штуки ручной работы для дома</h1>
       </div>
+    <!--
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
@@ -123,9 +140,9 @@
             <button class="reviews__write" type="button" >написать</button>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <section class="page-footer-contacts">
         <h2 class="page-footer-contacts__title">Контакты</h2>
         <table class="page-footer-contacts__items">
@@ -172,7 +189,23 @@
           </a>
         </p>
       </div>
-    </footer>
+    </footer> -->
 
+    <script>
+    var navMain = document.querySelector('.page-header-nav');
+    var navToggle = document.querySelector('.page-header-nav__toggle');
+
+    // navMain.classList.remove('page-header-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('page-header-nav--closed')) {
+        navMain.classList.remove('page-header-nav--closed');
+        navMain.classList.add('page-header-nav--opened');
+      } else {
+        navMain.classList.add('page-header-nav--closed');
+        navMain.classList.remove('page-header-nav--opened');
+      }
+    });
+  </script>
   </body>
 </html>

@@ -1,0 +1,137 @@
+.page-header-nav {
+  //display: none;
+  height: 316px;
+  //border: 2px solid yellow;
+}
+
+.page-header-nav__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header-nav__item a {
+  display: block;
+  padding: 27px 20px;
+
+  font-weight: bold;
+  font-size: 17px;
+  //margin-right: 30px;
+  border-bottom: 1px solid #ececec;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.page-header-nav__search::before {
+  content: "";
+  width: 18px;
+  height: 19px;
+  background: url("/img/icon-search.svg") no-repeat;
+  opacity: 0.2;
+  display: inline-block;
+
+}
+
+.page-header-nav__basket::before {
+  content: "";
+  width: 18px;
+  height: 19px;
+  background: url("/img/icon-cart.svg") no-repeat;
+  opacity: 0.2;
+  display: inline-block;
+}
+
+.page-header-nav__toggle {
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  margin: auto 30px;
+  display: block;
+  border: none;
+  background: none;
+  background: url("/img/icon-menu-open.svg") no-repeat;
+  width: 21px;
+  height: 20px;
+  font-size: 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-header-nav--closed {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .page-header-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+  }
+
+  .page-header-nav__toggle {
+    display: none;
+  }
+
+  .page-header-nav__items {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  .page-header-nav__item a {
+    border: none;
+  }
+
+  .page-header-nav__item:nth-child(1)  {
+    margin-left: 50px;
+  }
+
+  .page-header-nav__item:nth-child(2)  {
+    order: -1;
+    margin-right: auto;
+
+  }
+
+  .page-header-nav__item:nth-child(3)  {
+    order: -2;
+    margin-left: 300px;
+    //flex-grow: 1;
+  }
+
+  .page-header-nav__item:nth-child(4)  {
+    order: -3;
+    margin-right: 50px;
+  }
+
+  .page-header-nav__item .page-header-nav__search {
+    font-size: 0;
+  }
+
+}
+
+@media (min-width: $desktop-widths) {
+  .page-header-nav__items {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .page-header-nav {
+    top:0;
+    left: 0;
+  }
+
+  .page-header-nav__item:nth-child(2)  {
+    order: 0;
+  }
+
+  .page-header-nav__item:nth-child(3)  {
+    order: 0;
+  }
+
+  .page-header-nav__item:nth-child(4)  {
+    order: 0;
+  }
+}
