@@ -1,10 +1,10 @@
 .about {
   margin: 30px;
+  font-weight: bold;
 }
 
 .about__title {
-  font-family: "Opensans", sans-serif;
-  font-weight: bold;
+
 }
 
 .about__items {
@@ -14,7 +14,28 @@
 }
 
 .about__item {
-  font-family: "Opensans", sans-serif;
-  font-weight: bold;
+  //font-weight: bold;
   font-size: 16px;
+}
+
+@media (min-width: $tablet-widths) {
+  .about {
+    //height: 647px;
+    //border: 2px solid red;
+  }
+
+  .about__title {
+    font-size: 43px;
+  }
+
+  .about__items {
+    column-count: 2;
+  }
+
+  .about__item {
+    width: 45%;
+    margin: 20px 0;
+  }
+
+
 }
