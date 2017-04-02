@@ -1,6 +1,7 @@
 html, body {
   font-family: "Opensans", sans-serif;
   @include container;
+  border: 1px solid black;
 }
 
 img {
