@@ -40,6 +40,7 @@
 .page-footer-contacts__map {
   margin: 0 -30px;
   position: relative;
+  //width: 100%;
 }
 
 .page-footer-contacts__lable {
@@ -52,21 +53,12 @@
   margin: 0 30px;
 }
 
-.page-footer__write {
-  text-transform: uppercase;
-  font-family: "Opensans", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  color: $color-text;
-  border: 2px solid $color-text;
-  background-color: white;
-  width: 100%;
-  height: 50px;
-  margin: 35px 0;
-}
-
 .page-footer__bottom {
   background-color: #f1f1f1;
+}
+
+.page-footer__img-logo {
+  display: none;
 }
 
 .page-footer__social {
@@ -82,12 +74,93 @@
 }
 
 .page-footer__copyright {
-  font-family: "Opensans", sans-serif;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
   padding: 25px;
 }
 
+
 .page-footer__copyright-link {
+}
+
+@media (min-width: $tablet-widths) {
+  .page-footer-contacts {
+    margin: 50px;
+  }
+
+  .page-footer-contacts__title {
+    font-size: 46px;
+  }
+
+  .page-footer-contacts__title-wrapper {
+    background: url("/img/icon-flag.svg") no-repeat;
+    background-position: right;
+    height: 81px;
+  }
+
+  .page-footer-contacts__items tr {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+
+  .page-footer__button {
+    text-align: center;
+  }
+
+  .page-footer__write {
+    width: 230px;
+  }
+
+  .page-footer__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .page-footer__img-logo {
+    display: block;
+  }
+
+  .page-footer__social {
+    border: none;
+    padding: 0;
+  }
+
+  .page-footer__copyright {
+    padding:0;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .page-footer-contacts__title-wrapper {
+    background-position: left;
+  }
+
+  .page-footer-contacts__title {
+    margin-left: 175px;
+  }
+
+  .page-footer-contacts__items tr {
+    float: none;
+  }
+
+  .page-footer-contacts {
+    position: relative;
+    height: 300px;
+  }
+
+  .page-footer-contacts__map {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+  }
+
+  .page-footer__button {
+    width: 50%;
+  }
 }
