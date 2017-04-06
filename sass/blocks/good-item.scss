@@ -4,7 +4,6 @@
 }
 
 .good-item__title {
-  font-family: "Opensans", sans-serif;
   font-weight: bold;
   font-size: 17px;
   margin: 0;
@@ -17,4 +16,26 @@
 
 .good-item__line {
   color: red;
+}
+
+@media (min-width: $tablet-widths) {
+  .good-item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-left: none;
+    border-right: none;
+  }
+
+  .good-order {
+    margin-top: auto;
+    border-top: 1px solid #ededed;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .good-item {
+    width: auto;
+    border: 1px solid #ededed;
+  }
 }

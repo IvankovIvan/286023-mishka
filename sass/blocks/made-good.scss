@@ -1,11 +1,10 @@
 .made-good {
   border: 1px solid #ededed;
-  margin-top: 30px;
+  margin: 30px;
   padding: 30px;
 }
 
 .made-good__title {
-  font-family: "Opensans", sans-serif;
   font-weight: bold;
   font-size: 17px;
   margin: 0;
@@ -38,4 +37,38 @@
   font-size: 13px;
   color: $color-text;
   line-height: 24px;
+}
+
+@media (min-width: $tablet-widths) {
+  .made-good {
+    margin: 50px;
+    padding-top: 455px;
+    position: relative;
+  }
+
+  .made-good__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 455px;
+    width: 688px;
+    border: 1px solid brown;
+  }
+
+  .made-good__title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .made-good__video {
+    width: 682px;
+  }
+
+  .made-good {
+    padding-left: 760px;
+    padding-top: 0;
+    height: 455px;
+  }
 }

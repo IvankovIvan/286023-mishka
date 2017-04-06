@@ -7,14 +7,26 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__items ">
-        <img class="page-header__img" src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">
-        <img class="page-header__nav" src="img/icon-menu-open.svg" alt="Открыть меню" width="20" height="14">
+      <div class="page-header__logo ">
+        <img src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
+        <button class="page-header-nav__toggle" type="button" name="button">Открыть меню</button>
       </div>
+      <nav class="page-header-nav page-header-nav--closed" >
+        <div class="page-header-nav__wrapper">
+          <ul class="page-header-nav__items">
+            <li class="page-header-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="page-header-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="page-header-nav__item "><a class="page-header-nav__search" href="#">Поиcк по сайту</a></li>
+            <li class="page-header-nav__item "><a class="page-header-nav__basket" href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+
+      </nav>
+
     </header>
     <main class="page-catalog">
-      <div class="catalog-logan">
-        <h1 class="catalog-logan__title" >Каталог товаров</h1>
+      <div class="page-catalog-logan">
+        <h1 class="page-catalog-logan__title" >Каталог товаров</h1>
       </div>
       <div class="goods">
         <section class="good">
@@ -70,7 +82,6 @@
         <h2 class="made-good__title">Процесс производства</h2>
         <aside class="made-good__video">
           <video src="videofile.ogg" poster="/img/video-mobile@1x.jpg" preload="metadata">
-
           </video>
           <img class="made-good__image" src="/img/icon-play.svg" alt="play" width="102" height="78">
         </aside>
@@ -82,22 +93,23 @@
     </main>
     <footer>
       <div class="page-footer__bottom">
+        <img class="page-footer__img-logo" src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
         <p class="page-footer__social">
           <span class="social-links">
             <a class="social-link social-link--in" href="#">
-              <img  src="/img/icon-insta.svg" alt="map" width="25" height="25">
+              <img  src="/img/icon-insta.svg" alt="map" width="22" height="21">
             </a>
             <a class="social-link social-link--fb" href="#">
-              <img  src="/img/icon-fb.svg" alt="map" width="25" height="25">
+              <img  src="/img/icon-fb.svg" alt="map" width="15" height="29">
             </a>
             <a class="social-link social-link--tw" href="#">
-              <img  src="/img/icon-twitter.svg" alt="map" width="25" height="25">
+              <img  src="/img/icon-twitter.svg" alt="map" width="24" height="20">
             </a>
           </span>
         </p>
         <p class="page-footer__copyright">
           Разработано
-          <a class=" page-footer__copyright-link" href="#">
+          <a class="page-footer__copyright-link" href="#">
             <img  src="/img/htmlacademy.svg" alt="map" width="40" height="40">
           </a>
         </p>

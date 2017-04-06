@@ -1,8 +1,40 @@
 .goods {
-
+  margin: 0 30px;
 }
 
 .good__img {
   height: 195px;
   margin-top: 30px;
+}
+
+@media (min-width: $tablet-widths) {
+  .goods {
+    margin: 0 50px;
+  }
+
+  .good {
+    display: flex;
+    margin-top: 55px;
+  }
+
+  .good__img {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .goods {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .good {
+    width: 316px;
+    display: block;
+  }
+
+  .good__img {
+    width: 316px;
+  }
 }
