@@ -1,6 +1,5 @@
 .btn {
   text-transform: uppercase;
-  font-family: "Opensans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   color: $color-text;
@@ -13,13 +12,16 @@
 
 .label {
   display: block;
-  font-family: "Opensans", sans-serif;
   font-weight: bold;
   margin: 10px 0;
 }
 
 .input-check {
   display: none;
+}
+
+.input-label-radio {
+
 }
 
 .input-label-radio::before {
@@ -43,6 +45,7 @@
   vertical-align: middle;
   border: 10px solid white;
   box-shadow: 0 0 0 2px black;
+  background-color: white;
 }
 
 input[type="radio"]:checked + label:before{
@@ -82,7 +85,6 @@ input[type="checkbox"]:checked + label:before{
 
 .input-submit {
   text-transform: uppercase;
-  font-family: "Opensans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   color: $color-text;

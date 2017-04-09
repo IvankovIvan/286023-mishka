@@ -7,11 +7,24 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__items ">
-        <img class="page-header__img" src="img/logo-mobile.svg" alt="Мишка" width="86" height="35">
-        <img class="page-header__nav" src="img/icon-menu-open.svg" alt="Открыть меню" width="20" height="14">
+      <div class="page-header__logo ">
+        <img src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
+        <button class="page-header-nav__toggle" type="button" name="button">Открыть меню</button>
       </div>
+      <nav class="page-header-nav page-header-nav--closed" >
+        <div class="page-header-nav__wrapper">
+          <ul class="page-header-nav__items">
+            <li class="page-header-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="page-header-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="page-header-nav__item "><a class="page-header-nav__search" href="#">Поиcк по сайту</a></li>
+            <li class="page-header-nav__item "><a class="page-header-nav__basket" href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+      <span class="page-main-delivery">Бесплатная доставка по России</span>
+
     </header>
+
     <main class="page-main-form">
       <div class="page-main-form__logan">
         <h1 class="page-main-form__title">Вязание на заказ</h1>
@@ -27,7 +40,7 @@
           <input class="input-check" type="radio" id="radio-toy" name="form-order-type" value="Детская игрушка">
           <label class="label input-label-radio"for="radio-toy">Детская игрушка</label>
         </fieldset>
-        <fieldset class="form-order__fieldset">
+        <fieldset class="form-order__fieldset form-order--background-grey">
           <legend class="form-order__legend">
             цвет
           </legend>
@@ -53,11 +66,11 @@
           <label class="label" for="form-order-middle-name">Отчество:</label>
           <input class="input-text" type="text" name="form-order-middle-name" id="form-order-middle-name" placeholder="Отчество, если желаете">
         </fieldset>
-        <fieldset class="form-order__fieldset">
+        <fieldset class="form-order__fieldset form-order--background-grey">
           <legend class="form-order__legend" >тел</legend>
           <input class="input-text input-text--tel" type="tel" name="form-order-tel" pattern="\+7\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="+7 XXX XX XX*" required>
         </fieldset>
-        <fieldset class="form-order__fieldset">
+        <fieldset class="form-order__fieldset form-order--background-grey">
           <legend class="form-order__legend" >e-mail</legend>
           <input class="input-text input-text--email" type="email" name="form-order-email" placeholder="Ваш Email*" required>
         </fieldset>
@@ -65,28 +78,32 @@
           <legend class="form-order__legend" >доп</legend>
           <textarea class="textarea" name="form-order-descr" rows="8" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
-        <p class="form-order__text"><sup>*</sup>Поля обязательны для заполнения</p>
-        <input class="input-submit" type="submit" value="Отправить заказ">
+        <div class="form-order--bottom">
+          <p class="form-order__text"><sup>*</sup>Поля обязательны для заполнения</p>
+          <input class="input-submit form-order--submit" type="submit" value="Отправить заказ">
+        </div>
+
       </form>
     </main>
     <footer>
       <div class="page-footer__bottom">
+        <img class="page-footer__img-logo" src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
         <p class="page-footer__social">
           <span class="social-links">
             <a class="social-link social-link--in" href="#">
-              <img  src="/img/icon-insta.svg" alt="map" width="25" height="25">
+              <img  src="/img/icon-insta.svg" alt="map" width="22" height="21">
             </a>
             <a class="social-link social-link--fb" href="#">
-              <img  src="/img/icon-fb.svg" alt="map" width="25" height="25">
+              <img  src="/img/icon-fb.svg" alt="map" width="15" height="29">
             </a>
             <a class="social-link social-link--tw" href="#">
-              <img  src="/img/icon-twitter.svg" alt="map" width="25" height="25">
+              <img  src="/img/icon-twitter.svg" alt="map" width="24" height="20">
             </a>
           </span>
         </p>
         <p class="page-footer__copyright">
           Разработано
-          <a class="btn page-footer__copyright-link" href="#">
+          <a class="page-footer__copyright-link" href="#">
             <img  src="/img/htmlacademy.svg" alt="map" width="40" height="40">
           </a>
         </p>

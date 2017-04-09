@@ -1,12 +1,9 @@
 .page-main-form {
-  margin: 0 30px;
 }
 
 .page-main-form__logan {
-  margin: 0 -30px;
-  font-family: "Opensans", sans-serif;
   font-weight: bold;
-  width: 320px;
+  width: 100%;
   height: 180px;
   background-color: #f1f1f1;
   display: table;
@@ -17,4 +14,25 @@
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+
+@media (min-width: $tablet-widths) {
+  .page-main-form__logan {
+    height: 225px;
+  }
+
+
+  .page-main-form__title {
+    font-size: 43px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .page-main-form__logan {
+    height: 254px;
+  }
+
+  .page-main-form__title {
+    font-size: 53px;
+  }
 }
