@@ -10,7 +10,7 @@
     <header class="page-header">
       <div class="page-header__logo ">
         <img src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
-        <button class="page-header-nav__toggle" type="button" name="button">Открыть меню</button>
+        <button class="page-header-nav__toggle page-header-nav--toggle-open" type="button" name="button">Открыть меню</button>
       </div>
       <nav class="page-header-nav page-header-nav--closed" >
         <div class="page-header-nav__wrapper">
@@ -210,6 +210,14 @@
       } else {
         navMain.classList.add('page-header-nav--closed');
         navMain.classList.remove('page-header-nav--opened');
+      }
+
+      if (navToggle.classList.contains('page-header-nav--toggle-open')) {
+        navToggle.classList.remove('page-header-nav--toggle-open');
+        navToggle.classList.add('page-header-nav--toggle-close');
+      } else {
+        navToggle.classList.add('page-header-nav--toggle-open');
+        navToggle.classList.remove('page-header-nav--toggle-close');
       }
     });
   </script>
