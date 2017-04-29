@@ -9,7 +9,11 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo ">
-        <img src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
+        <picture>
+          <source media="(min-width: $tablet-widths)" srcset="/img/logo-mobile.svg" />
+          <img src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
+        </picture>
+
         <button class="page-header-nav__toggle page-header-nav--toggle-open" type="button" name="button">Открыть меню</button>
       </div>
       <nav class="page-header-nav page-header-nav--closed" >
