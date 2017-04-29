@@ -10,7 +10,8 @@
     <header class="page-header">
       <div class="page-header__logo ">
         <picture>
-          <source media="(min-width: $tablet-widths)" srcset="/img/logo-mobile.svg" />
+          <source media="(min-width: 900px)" srcset="/img/logo-desktop.svg" />
+          <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg" />
           <img src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
         </picture>
 
@@ -19,15 +20,16 @@
       <nav class="page-header-nav page-header-nav--closed" >
         <div class="page-header-nav__wrapper">
           <ul class="page-header-nav__items">
-            <li class="page-header-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="page-header-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="page-header-nav__item page-header-nav--item-catalog"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="page-header-nav__item page-header-nav--item-knitting"><a href="form.html">Вязание на заказ</a></li>
             <li class="page-header-nav__item "><a class="page-header-nav__search" href="#">Поиcк по сайту</a></li>
             <li class="page-header-nav__item "><a class="page-header-nav__basket" href="#">Корзина: пока пуста</a></li>
+            <li class="page-header-nav__item page-header-nav--item-new"><a href="#">Новые поступления</a></li>
+            <li class="page-header-nav__item page-header-nav--item-sale"><a href="#">Распродажа</a></li>
+
           </ul>
         </div>
       </nav>
-      <span class="page-main-delivery">Бесплатная доставка по России</span>
-
     </header>
     <main class="page-main">
       <div class="page-main-logan">
