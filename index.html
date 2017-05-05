@@ -53,7 +53,7 @@
               товар недели
             </aside>
           </header>
-          <div class="good-week__descr">
+          <div class="good-week__wrapper">
             <p class="good-week__intro">Экологически чистая пряжа, ручной работы. Доступны в шести расцветках, и трех размерах.</p>
             <table class="good-week__items">
               <tr>
@@ -69,17 +69,21 @@
                 <td class="good-week__item good-week__value">15 см</td>
               </tr>
             </table>
-          </div>
 
-          <div class="good-week__image">
-            <img  src="/img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260" height="315">
+            <div class="good-week__image">
+              <picture>
+                <source media="(min-width: 900px)" srcset="/img/triple-set-desktop@1x.jpg 1x, /img/triple-set-desktop@2x.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="/img/triple-set-tablet@1x.jpg 1x, /img/triple-set-tablet@2x.jpg 2x" />
+                <img  src="/img/triple-set-mobile@1x.jpg" srcset="/img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки" width="260" height="315">
+              </picture>
+            </div>
+            <div class="good-week__price">
+              <p>Цена: 990 руб.</p>
+            </div>
+            <button class="btn good-week__button button" type="button" >
+              заказать
+            </button>
           </div>
-          <div class="good-week__price">
-            <p>Цена: 990 руб.</p>
-          </div>
-          <button class="btn good-week__button button" type="button" >
-            заказать
-          </button>
         </section>
       </article>
       <hr>

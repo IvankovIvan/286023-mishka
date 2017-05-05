@@ -48,16 +48,53 @@
 
 @media (min-width: $tablet-widths) {
   .good-week {
-    margin: 50px;
+    margin: 0 50px;
   }
 
   .good-week__header {
+    margin-top: 41px;
+    //margin-bottom: 50px;
     display: flex;
     align-items: center;
   }
 
   .good-week__title {
     font-size: 43px;
+  }
+
+  .good-week__wrapper {
+    margin: 41px 0;
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .good-week__intro {
+    margin-top: 0;
+    font-size: 17px;
+    line-height: 30px;
+    width: 50%;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+
+  .good-week__items {
+    width: 291px;
+  }
+
+  .good-week__price {
+    font-size: 20px;
+    width: 291px;
+    margin-top: 20px;
+  }
+
+  .good-week__button {
+    width: 292px;
+    height: 52px;
+    margin-bottom: 0;
+    margin-top: 0px;
   }
 
   .good-week__aside {
@@ -68,65 +105,66 @@
     margin-left: auto;
   }
 
-  .good-week__descr {
-    float: left;
-    width: 50%;
-    padding-right: 50px;
-    box-sizing: border-box;
-  }
-
   .good-week__image {
-    float: right;
-    width: 50%;
-    height: 404px;
+    margin: 0;
+    order: 1
   }
 
-  .good-week__button {
-    width: 50%;
+  .good-week__image img {
+    height: 404px;
+    width: 333px;
   }
 }
 
 @media (min-width: $desktop-widths) {
   .good-week__section {
     position: relative;
+    margin: 70px 0;
   }
 
   .good-week__header {
+    position: absolute;
     flex-direction: row-reverse;
   }
 
   .good-week__title {
     margin-right: auto;
+    font-size: 53px;
+
   }
 
   .good-week__aside {
-    margin-left: 0;
+    margin-left: 0px;
     width: 175px;
+    padding: 0 30px;
+    box-sizing: border-box;
   }
 
-  .good-week__descr {
-    float: none;
+  .good-week__wrapper {
+    height: 636px;
+    margin: 0;
+  }
+
+  .good-week__intro {
+    padding-top: 160px;
+    padding-left: 175px;
+    padding-right: 50px;
+  }
+
+  .good-week__items{
     margin-left: 175px;
-    width: 350px;
   }
 
   .good-week__price {
-    width: 50%;
     margin-left: 175px;
-    width: 350px;
   }
 
-  .good-week__image {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 0;
-    z-index: -1;
+  .good-week__image img {
+    width: 525px;
+    height: 636px;
   }
 
   .good-week__button {
-    width: 350px;
     margin-left: 175px;
-    margin-right: 30px;
   }
 }

@@ -9,13 +9,14 @@
 .page-main-nav__item {
   margin: 0;
   background-repeat: no-repeat;
-  background-position: 90%;
+  background-position: 85%;
+  //box-sizing: border-box;
 }
 
 .page-main-nav__interior {
   background-color: #63D1BB;
   background-image: url("/img/icon-interior.svg");
-
+  background-size: 41px auto;
 }
 
 .page-main-nav__toys {
@@ -29,8 +30,9 @@
   font-size: 18px;
   display: block;
   text-decoration: none;
-  padding: 30px;
-
+  padding-left: 36px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @media (min-width: $tablet-widths) {
@@ -43,5 +45,13 @@
     width: 50%;
     height: 120px;
     float: left;
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    box-sizing: border-box;
+  }
+
+  .page-main-nav__link {
+    font-size: 20px;
+    padding-top: 36px;
   }
 }
