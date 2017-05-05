@@ -136,21 +136,27 @@
 }
 
 @media (min-width: $desktop-widths) {
+  .page-footer-contacts {
+    position: relative;
+    height: 457px;
+
+  }
+
   .page-footer-contacts__title-wrapper {
-    background-position: left;
+    background-position: 65px;
   }
 
   .page-footer-contacts__title {
     margin-left: 175px;
   }
 
-  .page-footer-contacts__items tr {
-    float: none;
+  .page-footer-contacts__items {
+    margin-left: 175px;
+    width: 50%;
   }
 
-  .page-footer-contacts {
-    position: relative;
-    height: 300px;
+  .page-footer-contacts__items tr {
+    float: none;
   }
 
   .page-footer-contacts__map {
@@ -158,6 +164,8 @@
     right: 0;
     top: 0;
     width: 50%;
+    height: 457px;
+    margin: 0;
   }
 
   .page-footer__button {
