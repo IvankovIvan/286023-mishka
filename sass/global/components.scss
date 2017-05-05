@@ -94,3 +94,22 @@ input[type="checkbox"]:checked + label:before{
   height: 50px;
   margin: 10px 0;
 }
+
+hr {
+  background: url('/img/bg-zigzag-line.svg') no-repeat top center;
+  background-size: cover;
+	height:7px;
+	border:none;
+}
+
+@media (min-width: $tablet-widths) {
+  hr {
+    height:17px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  hr {
+    height:23px;
+  }
+}
