@@ -3,9 +3,7 @@
   font-weight: bold;
 }
 
-.about__title {
-
-}
+.about__title {}
 
 .about__items {
   margin: 0;
@@ -14,7 +12,6 @@
 }
 
 .about__item {
-  //font-weight: bold;
   font-size: 16px;
 }
 
@@ -28,13 +25,32 @@
   }
 
   .about__items {
-    column-count: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 420px;
   }
 
   .about__item {
-    width: 45%;
-    margin: 20px 0;
+    width: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    padding-right: 41px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .about {
+    margin: 50px 225px;
   }
 
+  .about__title {
+    font-size: 53px;
+  }
 
+  .about__item {
+    padding-right: 57px;
+  }
 }
