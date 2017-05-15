@@ -8,21 +8,27 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo ">
-        <img src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
-        <button class="page-header-nav__toggle" type="button" name="button">Открыть меню</button>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="/img/logo-desktop.svg" />
+          <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg" />
+          <img src="/img/logo-mobile.svg" alt="Открыть меню" width="88" height="79">
+        </picture>
+
+        <button class="page-header-nav__toggle page-header-nav--toggle-open" type="button" name="button">Открыть меню</button>
       </div>
       <nav class="page-header-nav page-header-nav--closed" >
         <div class="page-header-nav__wrapper">
           <ul class="page-header-nav__items">
-            <li class="page-header-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="page-header-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="page-header-nav__item page-header-nav--item-catalog"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="page-header-nav__item page-header-nav--item-knitting"><a href="form.html">Вязание на заказ</a></li>
             <li class="page-header-nav__item "><a class="page-header-nav__search" href="#">Поиcк по сайту</a></li>
             <li class="page-header-nav__item "><a class="page-header-nav__basket" href="#">Корзина: пока пуста</a></li>
+            <li class="page-header-nav__item page-header-nav--item-new"><a href="#">Новые поступления</a></li>
+            <li class="page-header-nav__item page-header-nav--item-sale"><a href="#">Распродажа</a></li>
+            <li class="page-header-nav__item page-header-nav--item-delivery"><span>Бесплатная доставка по России</span></li>
           </ul>
         </div>
       </nav>
-      <span class="page-main-delivery">Бесплатная доставка по России</span>
-
     </header>
 
     <main class="page-main-form">
@@ -35,7 +41,7 @@
         </p>
         <fieldset class="form-order__fieldset">
           <legend class="form-order__legend">тип</legend>
-          <input class="input-check" type="radio" id="radio-interior" name="form-order-type" value="Аксессуар для интерьера">
+          <input class="input-check" type="radio" id="radio-interior" name="form-order-type" value="Аксессуар для интерьера" checked>
           <label class="label input-label-radio" for="radio-interior">Аксессуар для интерьера</label>
           <input class="input-check" type="radio" id="radio-toy" name="form-order-type" value="Детская игрушка">
           <label class="label input-label-radio"for="radio-toy">Детская игрушка</label>
@@ -109,5 +115,29 @@
         </p>
       </div>
     </footer>
+    <script>
+    var navMain = document.querySelector('.page-header-nav');
+    var navToggle = document.querySelector('.page-header-nav__toggle');
+
+    // navMain.classList.remove('page-header-nav--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navMain.classList.contains('page-header-nav--closed')) {
+        navMain.classList.remove('page-header-nav--closed');
+        navMain.classList.add('page-header-nav--opened');
+      } else {
+        navMain.classList.add('page-header-nav--closed');
+        navMain.classList.remove('page-header-nav--opened');
+      }
+
+      if (navToggle.classList.contains('page-header-nav--toggle-open')) {
+        navToggle.classList.remove('page-header-nav--toggle-open');
+        navToggle.classList.add('page-header-nav--toggle-close');
+      } else {
+        navToggle.classList.add('page-header-nav--toggle-open');
+        navToggle.classList.remove('page-header-nav--toggle-close');
+      }
+    });
+  </script>
   </body>
 </html>

@@ -3,6 +3,8 @@
 }
 
 .form-order__text {
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 13px;
   line-height: 24px;
   color: $color-text;
@@ -10,7 +12,7 @@
 
 .form-order__fieldset {
   border: none;
-  padding: 0;
+  padding: 20px 0;
 }
 
 .form-order__legend {
@@ -22,6 +24,7 @@
   position: relative;
   background-color: white;
   z-index: 5;
+  //margin-bottom: 20px;
 }
 
 .form-order__legend::after {
