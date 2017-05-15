@@ -1,13 +1,13 @@
 .page-catalog-logan {
   font-weight: bold;
   width: 100%;
-  height: 180px;
+  height: 177px;
   background-color: #f1f1f1;
   display: table;
 }
 
 .page-catalog-logan__title {
-  font-size: 27px;
+  font-size: 28px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
@@ -15,10 +15,28 @@
 
 @media (min-width: $tablet-widths) {
   .page-catalog-logan {
-    height: 230px;
+    height: 226px;
+    border-bottom: 24px solid;
+    border-image: url("/img/bg-zigzag-fill.svg");
+    border-image-slice: 40;
+    //border-image-outset: 12px;
+    //box-sizing: border-box;
   }
 
   .page-catalog-logan__title {
     font-size: 43px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .page-catalog-logan {
+    height: 255px;
+    border-bottom: 34px solid;
+    border-image: url("/img/bg-zigzag-fill.svg");
+    border-image-slice: 50;
+  }
+
+  .page-catalog-logan__title {
+    font-size: 53px;
   }
 }

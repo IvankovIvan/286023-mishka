@@ -1,6 +1,6 @@
 .good-item {
   border: 1px solid #ededed;
-  padding: 30px;
+  padding: 29px 28px;
 }
 
 .good-item__title {
@@ -24,7 +24,15 @@
     flex-direction: column;
     width: 50%;
     border-left: none;
-    border-right: none;
+    //border-right: none;
+  }
+
+  .good-item__title {
+    font-size: 20px;
+  }
+
+  .good-item__info {
+    font-size: 15px;
   }
 
   .good-order {
@@ -35,7 +43,22 @@
 
 @media (min-width: $desktop-widths) {
   .good-item {
+    display: flex;
+    justify-content: space-between;
     width: auto;
+    height: 197px;
+    padding-top: 0;
+    padding-bottom: 0;
     border: 1px solid #ededed;
+  }
+
+  .good-item__title {
+    padding-top: 29px;
+  }
+
+  .good-item__info {
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
