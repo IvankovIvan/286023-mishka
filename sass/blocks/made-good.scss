@@ -8,15 +8,20 @@
   font-weight: bold;
   font-size: 17px;
   margin: 0;
+  padding-left: 60px;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .made-good__title::before {
   content: "";
   background: url("/img/icon-video.svg") no-repeat;
   width: 32px;
-  height: 22px;
+  height: 42px;
+  position: absolute;
   display: inline-block;
-  margin-right: 30px;
+  left: 0;
+  top: 5px;
 }
 
 .made-good__video {
@@ -37,6 +42,7 @@
   font-size: 13px;
   color: $color-text;
   line-height: 24px;
+  padding-right: 10px;
 }
 
 @media (min-width: $tablet-widths) {
@@ -53,22 +59,48 @@
     margin: 0;
     height: 455px;
     width: 688px;
-    border: 1px solid brown;
+  //  border: 1px solid brown;
+  }
+
+  .made-good__video-image  {
+    width: 668px;
+    height: 455px;
+  }
+
+  .made-good__image {
+    width: 102px;
+    height: 78px;
   }
 
   .made-good__title {
     font-size: 20px;
+    margin-top: 44px;
+  }
+
+  .made-good__title::before {
+    top: -5px;
   }
 }
 
 @media (min-width: $desktop-widths) {
-  .made-good__video {
-    width: 682px;
-  }
-
   .made-good {
     padding-left: 760px;
     padding-top: 0;
     height: 455px;
+    padding-bottom: 0;
+  }
+
+  .made-good__video {
+    width: 682px;
+    height: 455px;
+  }
+
+  .made-good__title {
+    margin-top: 101px;
+    padding-left: 0;
+  }
+
+  .made-good__title::before {
+    top: -60px;
   }
 }
